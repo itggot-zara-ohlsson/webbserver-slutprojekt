@@ -1,0 +1,12 @@
+h1 MyAnonymous
+p Here you can read other peoples posts, but you can not write your own. Register and sign in to write your own posts.
+
+a href="/login" Login
+Br
+a href="/register" Register
+
+- post.each do |post|
+    div class="Post"
+        p #{post[1]}
+
+    p #{numer_favorits(post[0])} Favlorits
